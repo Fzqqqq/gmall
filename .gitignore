@@ -27,18 +27,4 @@ mvnw*
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-.idea/.gitignore
-.idea/compiler.xml
-.idea/encodings.xml
-.idea/jarRepositories.xml
-.idea/libraries/
-.idea/modules.xml
-gmall-admin/
-gmall-common/
-gmall.iml
-pom.xml
-gmall-pms/.gitignore
-gmall-pms/.mvn/
-gmall-pms/mvnw
-gmall-pms/mvnw.cmd
-gmall-pms/src/
+
