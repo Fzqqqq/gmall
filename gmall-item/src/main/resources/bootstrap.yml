@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: item-service
+  cloud:
+    nacos:
+      config:
+        # 服务地址
+        server-addr: localhost:8848

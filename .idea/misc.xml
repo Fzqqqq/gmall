@@ -3,12 +3,16 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-pms/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-ums/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-oms/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-sms/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-wms/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-search/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-index/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-item/pom.xml" />
       </list>
     </option>
   </component>

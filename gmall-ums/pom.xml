@@ -18,6 +18,11 @@
     <dependencies>
         <dependency>
             <groupId>com.atguigu</groupId>
+            <artifactId>gmall-ums-interface</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.atguigu</groupId>
             <artifactId>gmall-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
@@ -68,6 +73,10 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
         </dependency>
     </dependencies>
 

@@ -1,0 +1,36 @@
+package com.atguigu.gmall.search.controller;
+
+import com.atguigu.gmall.common.bean.ResponseVo;
+import com.atguigu.gmall.search.pojo.SearchParamVo;
+import com.atguigu.gmall.search.pojo.SearchResponseVo;
+import com.atguigu.gmall.search.service.SearchService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @author fzqqq
+ * @create 2020-09-28 20:30
+ */
+@Controller
+@RequestMapping("search")
+public class SearchController {
+
+    @Autowired
+    private SearchService searchService;
+
+    @GetMapping
+    public String search(SearchParamVo searchParamVo, Model model) {
+        SearchResponseVo searchResponseVo = searchService.search(searchParamVo);
+        model.addAttribute("response", searchResponseVo);
+        System.out.println("searchResponseVo = " + searchResponseVo);
+        model.addAttribute("searchParam", searchParamVo);
+        return "search";
+    }
+
+
+}

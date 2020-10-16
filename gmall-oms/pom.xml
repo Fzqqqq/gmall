@@ -14,7 +14,6 @@
     <description>订单管理模块</description>
 
 
-
     <dependencies>
         <dependency>
             <groupId>com.atguigu</groupId>
@@ -70,7 +69,6 @@
             </exclusions>
         </dependency>
     </dependencies>
-
 
 
     <build>
