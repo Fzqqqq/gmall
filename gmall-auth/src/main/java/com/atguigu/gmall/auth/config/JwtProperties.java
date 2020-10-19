@@ -2,6 +2,7 @@ package com.atguigu.gmall.auth.config;
 
 import com.atguigu.gmall.common.utils.RsaUtils;
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import javax.annotation.PostConstruct;
@@ -10,6 +11,7 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 
 @Data
+@Slf4j
 @ConfigurationProperties(prefix = "auth.jwt")
 public class JwtProperties {
 

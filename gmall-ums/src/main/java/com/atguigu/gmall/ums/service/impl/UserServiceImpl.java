@@ -75,6 +75,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
         userEntity.setStatus(1);
         userEntity.setIntegration(0);
         userEntity.setGrowth(0);
+        userEntity.setSalt(salt);
         userEntity.setNickname(userEntity.getNickname());
 
         // 添加到数据库
@@ -107,8 +108,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
         if (!StringUtils.equals(passwordMd5, userEntity.getPassword())) {
             throw new UserException("密码输入错误！");
         }
-
-
         return userEntity;
     }
 
