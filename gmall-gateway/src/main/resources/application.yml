@@ -49,7 +49,10 @@ spring:
           uri: lb://auth-service
           predicates:
             - Host=sso.gmall.com
-
+        - id: cart-route # 购物车系统
+          uri: lb://cart-service
+          predicates:
+            - Host=cart.gmall.com
 
       x-forwarded:
         host-enabled: true
